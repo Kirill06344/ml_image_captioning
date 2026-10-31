@@ -1,0 +1,18 @@
+note: "Замороженный ResNet18 ImageNet-1K V1; Transformer decoder с нуля."
+kaggle:
+  data_slug: coco2014-caption-5k
+  timeout_minutes: 180
+  internet: true
+train:
+  model: resnet18-transformer
+  revision: IMAGENET1K_V1
+  seed: 1
+  epochs: 10
+  batch: 32
+  lr: 0.0003
+  max_target: 32
+  beams: 1
+  dim: 256
+  layers: 2
+  min_count: 2
+  patience: 3

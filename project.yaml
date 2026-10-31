@@ -1,0 +1,16 @@
+title: Генерация текстового описания изображения (Image captioning)
+author: Тесленко Анна Руслановна
+discipline: Машинное обучение
+year: 2026
+group: 5140904/50101
+supervisor: Селин Иван Андреевич
+dataset: MS-COCO 2014
+subset_images: 5000
+template: docs/assets/coursework-reference.docx
+report_filename: Курсовая работа — Тесленко
+primary_metric: CIDEr
+table_titles:
+- Состав подвыборки MS-COCO 2014
+- Параметры обучения
+- Результаты на проверочной выборке
+- Результаты на тестовой выборке

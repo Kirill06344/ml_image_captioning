@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "run": "caption-control",
+  "n_epochs": 8,
+  "best_epoch": 5,
+  "updates": 5008,
+  "elapsed_seconds": 486.135210108,
+  "gpu": "Tesla T4",
+  "peak_allocated_mib": 286.130859375,
+  "checkpoint_sha256": "6f3a056fcacc54b86400c87e18dae037cfe6faf61f35ac48e61df94cbd4a2d9f",
+  "local_reload_verified": true,
+  "vocabulary_matches_train": true,
+  "val_predictions": 500,
+  "dataset_fingerprint": "2cb84804e98ecfe5a7905b451f272927d43838973cbc61c4f13ab551629080a5",
+  "val_CIDEr": 0.6658330284481168
+}

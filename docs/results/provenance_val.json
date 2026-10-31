@@ -1,0 +1,38 @@
+{
+  "selection": {
+    "split": "val",
+    "primary_metric": "CIDEr",
+    "final": "caption-control",
+    "roles": {
+      "caption-constant": "baseline",
+      "caption-control": "candidate",
+      "caption-retrieval": "baseline"
+    },
+    "metric_units": {
+      "CIDEr": "raw",
+      "BLEU_1": "raw",
+      "BLEU_2": "raw",
+      "BLEU_3": "raw",
+      "BLEU_4": "raw",
+      "METEOR": "raw",
+      "ROUGE_L": "raw"
+    },
+    "scorer": {
+      "implementation": "pycocoevalcap",
+      "version": "1.2",
+      "meteor_java_locale": "en_US",
+      "tokenizer": "Stanford PTBTokenizer 3.4.1, lowercase, COCO punctuation filtering"
+    },
+    "dataset_fingerprint": "2cb84804e98ecfe5a7905b451f272927d43838973cbc61c4f13ab551629080a5",
+    "val_scores_sha256": {
+      "caption-constant": "97e3d6470d6fc4e6daeae5f25a0abdeaf0e730be017ac9d3a0a2810e7533cbc5",
+      "caption-control": "61451be33d90574b2df1cd782e93d3dd96fe48f63ea386788fa500b04ee065e9",
+      "caption-retrieval": "3f0c6ef755ea362b3eb62aa4c93369eb30f950220e20acf36edacef83766c34c"
+    }
+  },
+  "inputs_sha256": {
+    "caption-constant/scores_val.json": "97e3d6470d6fc4e6daeae5f25a0abdeaf0e730be017ac9d3a0a2810e7533cbc5",
+    "caption-control/scores_val.json": "61451be33d90574b2df1cd782e93d3dd96fe48f63ea386788fa500b04ee065e9",
+    "caption-retrieval/scores_val.json": "3f0c6ef755ea362b3eb62aa4c93369eb30f950220e20acf36edacef83766c34c"
+  }
+}

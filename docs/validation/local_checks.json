@@ -1,0 +1,119 @@
+{
+  "code_hash": "0b63dbd241a46466",
+  "pytest": {
+    "passed": 71,
+    "failed": 0,
+    "elapsed_seconds": 18.18
+  },
+  "versions": {
+    "torch": "2.6.0+cpu",
+    "torchvision": "0.21.0+cpu",
+    "pycocoevalcap": "1.2"
+  },
+  "synthetic_smoke": {
+    "path": "runs/local-synthetic-smoke",
+    "completed": true,
+    "train_images": 16,
+    "val_images": 16,
+    "updates": 10,
+    "dim": 256,
+    "layers": 2,
+    "checkpoint_reloaded": true,
+    "elapsed_seconds": 10.677598910995584,
+    "device": "cpu",
+    "is_coco_quality_result": false
+  },
+  "kaggle": {
+    "dry_run_passed": true,
+    "submitted": true,
+    "requested_user": "badzhik",
+    "account_verified": false,
+    "quota_verified": false,
+    "blocker": "DNS unavailable for api.kaggle.com from agent terminal",
+    "next_command": ".venv/bin/python tools/kaggle_start.py --user badzhik --data-owner badzhik --config configs/experiments/control.yaml --token-file ~/.kaggle/access_token",
+    "data_owner": "badzhik",
+    "runner_user": "badzhik",
+    "sharing_confirmed": false,
+    "data_uploaded": false,
+    "sharing_reported_by_user": true,
+    "data_uploaded_reported_by_user": true,
+    "account_verified_by_user_output": true,
+    "quota_verified_by_user_output": true,
+    "available_gpu_hours_reported": 30.0,
+    "migration": {
+      "from_kernel": "uliabzh/caption-smoke",
+      "to_kernel": "badzhik/caption-smoke-main",
+      "old_last_reported_status": "queued",
+      "old_cancellation_confirmed": false,
+      "new_submitted": false,
+      "config": "configs/experiments/smoke-main.yaml",
+      "user_requested": true
+    },
+    "smoke_completed": true,
+    "smoke_artifacts_verified": true,
+    "full_run_submitted_locally": true
+  },
+  "coco_smoke_completed": true,
+  "gpu_measured": true,
+  "remaining": [],
+  "coco_smoke": {
+    "path": "runs/local-coco-smoke",
+    "updates": 10,
+    "train_images": 16,
+    "val_images": 16,
+    "checkpoint_reloaded": true,
+    "elapsed_seconds": 13.653860464997706,
+    "device": "cpu",
+    "full_benchmark": false
+  },
+  "data": {
+    "dataset_fingerprint": "2cb84804e98ecfe5a7905b451f272927d43838973cbc61c4f13ab551629080a5",
+    "images": {
+      "train": 4000,
+      "val": 500,
+      "test": 500
+    },
+    "all_image_hashes_verified": true,
+    "encoder_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+  },
+  "constant_baseline": {
+    "path": "runs/caption-constant/scores_val.json",
+    "split": "val",
+    "n_images": 500,
+    "scored": true
+  },
+  "meteor_locale_fix": {
+    "reproduced_original_failure": true,
+    "cause": "Java Scanner InputMismatchException under ru_RU.UTF-8",
+    "fixed_java_locale": "en_US",
+    "protocol_and_metric": "upstream pycocoevalcap 1.2 METEOR unchanged"
+  },
+  "gpu_smoke_completed": true,
+  "gpu_smoke": {
+    "run": "caption-smoke-main",
+    "status": "passed",
+    "report": "docs/validation/gpu_smoke.json",
+    "gpu": "Tesla T4",
+    "elapsed_seconds": 25.989736675000017,
+    "peak_allocated_mib": 197.56201171875
+  },
+  "retrieval_baseline": {
+    "path": "runs/caption-retrieval/scores_val.json",
+    "n_images": 500,
+    "split": "val",
+    "neighbors_train_only": true,
+    "compared_to_constant_schema": true,
+    "elapsed_seconds": 193.34950489800394
+  },
+  "training_plan": {
+    "run": "caption-control",
+    "n_trainable_recipes": 1,
+    "epochs_max": 10,
+    "early_stopping_patience": 3,
+    "session_timeout_seconds": 7200,
+    "one_layer_excluded": true,
+    "full_run_submitted_locally": true
+  },
+  "full_training_completed": true,
+  "test_scored": true
+}

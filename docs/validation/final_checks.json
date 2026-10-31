@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "pytest": {
+    "passed": 71,
+    "failed": 0
+  },
+  "val_selection_locked_before_test": true,
+  "prediction_sets_verified": 6,
+  "n_predictions": 3000,
+  "test_training_updates": 0,
+  "n_main_sections": 8,
+  "n_tables": 4,
+  "n_figures": 9,
+  "n_pdf_pages": 20,
+  "renderer": "LibreOffice 7.4, Writer/Math/UNO in ephemeral Docker container",
+  "fonts_embedded": "Times New Roman regular and bold",
+  "visual_review": {
+    "all_pages_reviewed": true,
+    "toc_and_page_numbers_updated": true,
+    "captions_below_objects": true,
+    "overlaps_or_clipping_observed": false,
+    "cover_author_correct": true,
+    "unknown_group_and_supervisor_left_blank": false,
+    "group_and_supervisor_filled_and_checked": true
+  },
+  "sha256": {
+    "runs/selection.json": "1b2160766a16634e5a06744a37eab6fb624176920745f03b3274d9c8fddead52",
+    "README.md": "1fba43451f3dee1c8a3ddd93b9fc36286ab1478c4a47fc22de2a14fe616f1bbc",
+    "docs/report/Курсовая работа — Тесленко.docx": "e06a262cfca3426574b437bda663513bb42bb56616232c2f4fb4f0621aec11a6",
+    "docs/report/Курсовая работа — Тесленко.pdf": "d3208b453966c141c1f3aa861880f79283134fcde8ab97242e3a79a7d516f9fc",
+    "runs/caption-control/best.pt": "6f3a056fcacc54b86400c87e18dae037cfe6faf61f35ac48e61df94cbd4a2d9f",
+    "runs/caption-control/scores_val.json": "61451be33d90574b2df1cd782e93d3dd96fe48f63ea386788fa500b04ee065e9",
+    "runs/caption-control/scores_test.json": "2bbf48a3d8dcd068401daab4bfe0154d66ef94560c048755dec9ab216b54695c",
+    "runs/caption-constant/scores_val.json": "97e3d6470d6fc4e6daeae5f25a0abdeaf0e730be017ac9d3a0a2810e7533cbc5",
+    "runs/caption-constant/scores_test.json": "49cfb3e98d8fc0ed8c31ffb1d6d149388bf5f7999eceae735065ac1e238cf070",
+    "runs/caption-retrieval/scores_val.json": "3f0c6ef755ea362b3eb62aa4c93369eb30f950220e20acf36edacef83766c34c",
+    "runs/caption-retrieval/scores_test.json": "d6c9cbffac79ca8643b7a999478bba7b1a8d5dd961fef21a46321326bb637dfb",
+    "project.yaml": "c1e6dfc4847ea8b70fae8fbef114291b3a541929fa760d94d8ad8fdfd89c799d"
+  },
+  "editorial_revision": {
+    "service_text_removed": true,
+    "personal_info_only_on_cover": true,
+    "prose_dashes_removed": true,
+    "metrics_preserved": true,
+    "group": "5140904/50101",
+    "supervisor": "Селин Иван Андреевич"
+  }
+}

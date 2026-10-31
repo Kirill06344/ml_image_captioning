@@ -1,0 +1,5 @@
+extends: ../base.yaml
+slug: caption-control
+note: "Единственный основной обучающий прогон: два слоя декодера, greedy, seed=1. Лучший checkpoint по val CIDEr; сравнение с готовыми constant/retrieval."
+kaggle:
+  timeout_minutes: 120

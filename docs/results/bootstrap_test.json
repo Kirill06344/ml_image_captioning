@@ -1,0 +1,14 @@
+{
+  "metric": "CIDEr",
+  "scale": "raw",
+  "n_images": 500,
+  "delta": 0.25442243715970836,
+  "relative_improvement": 0.6615310696022354,
+  "paired_bootstrap_95_ci": [
+    0.20434753857749074,
+    0.3041602121503729
+  ],
+  "resamples": 10000,
+  "seed": 1,
+  "idf": "fixed corpus IDF; interval conditional on test corpus and a single trained checkpoint"
+}

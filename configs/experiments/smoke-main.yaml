@@ -1,0 +1,3 @@
+extends: smoke.yaml
+slug: caption-smoke-main
+note: "Тот же smoke на основном аккаунте badzhik после отмены очереди uliabzh; отдельные артефакты миграции."

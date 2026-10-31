@@ -1,0 +1,8 @@
+extends: ../base.yaml
+slug: caption-smoke
+note: "Проверка на 16 train/val: finite loss, 10 обновлений, reload, полные COCO-метрики. Не сравнивать с полными опытами."
+train:
+  epochs: 4
+  batch: 4
+  max_steps: 10
+  smoke_images: 16

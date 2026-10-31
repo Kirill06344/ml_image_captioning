@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "run": "caption-smoke-main",
+  "dataset_fingerprint": "2cb84804e98ecfe5a7905b451f272927d43838973cbc61c4f13ab551629080a5",
+  "code_hash": "0b63dbd241a46466",
+  "current_code_hash": "0b63dbd241a46466",
+  "checkpoint_sha256": "44af69738ae6522f846829374641e0bb72a1f951e5f5137b0e30c9a929e8e5da",
+  "steps": 10,
+  "predictions": 16,
+  "gpu": "Tesla T4",
+  "peak_allocated_mib": 197.56201171875,
+  "elapsed_seconds": 25.989736675000017,
+  "finite_loss": true,
+  "checkpoint_reloaded_locally": true,
+  "all_references_match": true,
+  "test_scored": false,
+  "full_training": {
+    "train_images": 4000,
+    "train_captions": 20010,
+    "vocabulary_size": 3824,
+    "batch": 32,
+    "steps_per_epoch": 626,
+    "max_epochs": 10
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.1.3",
+    "pycocoevalcap": "1.2"
+  }
+}
