@@ -10,4 +10,5 @@ caption-smoke-main — успешная проверка на GPU. local-coco-sm
 Ранний caption-smoke на uliabzh не использовался для выбора модели и итоговых метрик.
 
 Подробности — ../docs/experiment_protocol.md; сводные данные — ../docs/results/.
-Данные и веса исключены из git; новый remote и push не выполнялись.
+Данные и результаты прогонов исключены из git; в репозиторий входят только веса
+выбранной модели runs/caption-control/best.pt (62 МБ).

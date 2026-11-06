@@ -241,16 +241,24 @@ CIDEr оказался равен нулю.
 
 ## 7. Инструкция по использованию
 
-Для работы нужны Python и библиотеки из requirements.txt. Модель поддерживает выполнение
-на CPU и GPU. Среда устанавливается следующими командами:
+Для работы нужны Python 3.10–3.12 и библиотеки из requirements.txt. Модель поддерживает
+выполнение на CPU и GPU. Команды запускаются из корня проекта. Тесты не требуют данных COCO
+и проверяют, что окружение собрано правильно:
 
 ```bash
-/usr/bin/python3 -m venv .venv
+git clone https://github.com/Kirill06344/ml_image_captioning.git
+cd ml_image_captioning
+python3 -m venv .venv
+.venv/bin/pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu
 .venv/bin/pip install -r requirements.txt
+.venv/bin/python -m pytest
 ```
 
-Веса обученной модели находятся в runs/caption-control/best.pt. В этом файле также
-сохранены архитектура и словарь, поэтому отдельно загружать исходные веса ImageNet не нужно.
+Вторая команда `pip` ставит версию PyTorch для CPU. Для GPU её нужно пропустить или заменить
+сборкой с CUDA по [инструкции PyTorch](https://pytorch.org/get-started/previous-versions/).
+
+Веса обученной модели (62 МБ) входят в репозиторий: runs/caption-control/best.pt.
+В этом файле также сохранены архитектура и словарь, поэтому скачивать что-либо ещё не нужно.
 Чтобы получить подпись к своей фотографии, достаточно указать путь к изображению:
 
 ```bash
@@ -258,13 +266,25 @@ CIDEr оказался равен нулю.
 ```
 
 Скрипт выводит подпись на английском языке. При наличии CUDA используется GPU,
-в остальных случаях вычисления выполняются на CPU.
+в остальных случаях вычисления выполняются на CPU. Проверить модель можно на фотографиях
+из отчёта, например:
 
-Данные находятся в data/processed. Файлы train.jsonl, val.jsonl и test.jsonl содержат
-идентификаторы фотографий, пути к файлам и эталонные подписи. Предсказания и оценки
-сохранены в каталогах runs/caption-control, runs/caption-retrieval и runs/caption-constant.
+```bash
+.venv/bin/python tools/predict.py --image docs/results/example-test-195697.jpg
+```
 
-Таблицы и диаграммы результатов можно собрать повторно:
+Должна получиться подпись «a man riding a snowboard down a snowy hill», как в
+[галерее примеров](docs/results/examples.md). Фотографии галереи сохранены как пересжатые
+копии оригиналов COCO, поэтому на некоторых из них подпись может немного отличаться
+от приведённой в отчёте: отчётные подписи получены по исходным файлам.
+
+Готовые таблицы, графики и примеры лежат в docs/results. Данные COCO (около 2 ГБ),
+прогнозы и оценки отдельных прогонов в репозиторий не входят. Подготовленная выборка
+восстанавливается из официальных источников командой `.venv/bin/python tools/download_assets.py`.
+Файлы data/processed/train.jsonl, val.jsonl и test.jsonl содержат идентификаторы фотографий,
+пути к файлам и эталонные подписи.
+
+После повторной оценки моделей (docs/runbook.md) таблицы и диаграммы можно собрать заново:
 
 ```bash
 .venv/bin/python tools/collect_results.py --split val

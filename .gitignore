@@ -4,5 +4,8 @@ __pycache__/
 *.pyc
 data/
 runs/*/
+!runs/caption-control/
+runs/caption-control/*
+!runs/caption-control/best.pt
 !runs/README.md
 .cache/
